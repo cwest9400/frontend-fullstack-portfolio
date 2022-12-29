@@ -1,0 +1,9 @@
+.nav-style {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around ;
+    border: 3px solid black;
+    padding: 8px;
+    width: 100%;
+    margin: auto;
+}
