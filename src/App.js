@@ -12,8 +12,8 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 
 function App() {
-  // const URL = "http://localhost:4000/"
-  const URL = "https://elegant-duckanoo-8aeefa.netlify.app/"
+  const URL = "http://localhost:3000/"
+  // const URL = "https://elegant-duckanoo-8aeefa.netlify.app/"
   
   return (
     <div className="App">

@@ -1,18 +1,27 @@
 import React, {useState, useEffect } from "react"
 
 function Projects(props) {
-    const [projects, setProjects] = useState(null)
+    const [projects, setProjects] = useState([])
+    
+    useEffect(() => {
+        fetch("./projects.json")
+        .then((res) => res.json())
+        .then((json) => {
+            setProjects(json)
+        })
+        .catch(console.error)
+    }, [])
+    
+    // const getProjectData = async ()=> {
+    //     const response = await fetch("./projects.json")
+    //     const data = await response.json()
+    //     setProjects(data)
+    // }
 
-    const getProjectData = async ()=> {
-        const response = await fetch("./projects.json")
-        const data = await response.json()
-        setProjects(data)
-    }
-
-    useEffect(() => getProjectData(), [])
     
     const loaded = ()=> {
-        return projects.map((project) => (
+        return (
+            projects.map((project) => (
             <div>
                 <h1>{project.name}</h1>
                 <img src ={project.image} />
@@ -24,7 +33,8 @@ function Projects(props) {
                 </a>
             </div>
         ))
-    }
+    )
+}
     return (
        projects ? loaded() : <h1>Loading...</h1>    )
 }
