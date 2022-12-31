@@ -12,7 +12,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 
 function App() {
-  const URL = "http://localhost:4000/"
+  const URL = "https://oldnebu.herokuapp.com/"
   
   
   return (

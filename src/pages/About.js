@@ -5,7 +5,7 @@ function About(props) {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    fetch("./about.json")
+    fetch("https://oldnebu.herokuapp.com/about")
       .then((res) => res.json())
       .then((json) => {
         setAbout(json)

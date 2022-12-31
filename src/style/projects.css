@@ -1,0 +1,23 @@
+.container {
+    display: inline-flex;
+    
+    padding: 20px;
+    
+    /* justify-content: center; */
+    
+}
+.project-card {
+    background-color: rgb(121, 174, 174);
+    /* display: flex;
+    flex-direction: column; */
+    width: 500px;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 5px;
+    border-radius: 10px;
+
+}
+
+.project-image {
+    width: 100%;
+}
