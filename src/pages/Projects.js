@@ -12,17 +12,10 @@ function Projects(props) {
         .catch(console.error)
     }, [])
     
-    // const getProjectData = async ()=> {
-    //     const response = await fetch("./projects.json")
-    //     const data = await response.json()
-    //     setProjects(data)
-    // }
-
-    
     const loaded = ()=> {
         return (
             projects.map((project) => (
-            <div>
+            <div >
                 <h1>{project.name}</h1>
                 <img src ={project.image} />
                 <a href={project.git}>
