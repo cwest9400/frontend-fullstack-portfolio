@@ -1,0 +1,29 @@
+//Sass variable
+@use "_variables" as *;
+
+body {
+    background-color: $background-color;
+    font-family: $primary-font;
+    color: $primary-color;
+}
+
+header {
+    background-color: $primary-color;
+    color: $background-color;
+    position: sticky;
+    top: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: $background-color;
+}
+
+.nav-header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+}

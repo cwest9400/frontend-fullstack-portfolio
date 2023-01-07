@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/input.scss","../sass/_variables/_colors.scss","../sass/_variables/_fonts.scss"],"names":[],"mappings":"AAGA;EACI,kBCJe;EDKf,aELW;EFMX,OCLY;;;ADQhB;EACI,kBCTY;EDUZ,OCXe;EDYf;EACA;;;AAIJ;EACI;EACA,OCnBe;;;ADsBnB;EACI;EACA;EACA;EACA;EACA","file":"output.css"}

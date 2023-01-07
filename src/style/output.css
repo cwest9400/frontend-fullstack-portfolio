@@ -1,0 +1,27 @@
+body {
+  background-color: #fdfdfd;
+  font-family: "poppins", sans-serif;
+  color: #000000;
+}
+
+header {
+  background-color: #000000;
+  color: #fdfdfd;
+  position: sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+.nav-header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10% 0 10%;
+}
+
+/*# sourceMappingURL=output.css.map */

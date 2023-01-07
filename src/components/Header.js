@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom"
-import "../style/nav.css"
+import "../style/output.css"
 
 function Header (props) {
     return (
         <header>
-        <h1>My Portfolio Page</h1>
-        <nav>
-            <div  className="nav-style">
-            <Link to="/">Home</Link>
+        <nav className="nav-header">
+            
+                <div>
+            <Link to="/">christopher west</Link>
+            </div>
+            <div>
             <Link to="/about">About</Link>
             <Link to="/projects">Projects</Link>
             </div>
+            
         </nav>
         </header>
     )
