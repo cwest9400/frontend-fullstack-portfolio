@@ -16,18 +16,17 @@ header .header-links {
   gap: 24px;
   font-size: 0.5em;
 }
-
-a {
-  text-decoration: none;
-  color: #fdfdfd;
-}
-
-.nav-header {
+header .nav-header {
   display: flex;
   height: 80px;
   align-items: center;
   justify-content: space-between;
   margin: 0 10% 0 10%;
+}
+
+a {
+  text-decoration: none;
+  color: #fdfdfd;
 }
 
 /*# sourceMappingURL=output.css.map */

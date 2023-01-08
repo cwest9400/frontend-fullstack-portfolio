@@ -21,18 +21,18 @@ header {
         gap: 24px;
         font-size: .5em;
     }
+    
+    .nav-header {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10% 0 10%;
+    }
 }
 
 
 a {
     text-decoration: none;
     color: $background-color;
-}
-
-.nav-header {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 10% 0 10%;
 }
