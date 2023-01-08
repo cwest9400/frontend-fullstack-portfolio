@@ -9,9 +9,9 @@ function Header (props) {
                 <div>
             <Link to="/">christopher west</Link>
             </div>
-            <div>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
+            <div className="header-links">
+            <Link to="/about">about</Link>
+            <Link to="/projects">projects</Link>
             </div>
             
         </nav>

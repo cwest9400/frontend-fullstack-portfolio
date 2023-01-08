@@ -1,5 +1,5 @@
 
-import './App.css';
+
 
 //IMPORT COMPONENTS
 import Header from "./components/Header"

@@ -3,7 +3,8 @@
 
 body {
     background-color: $background-color;
-    font-family: $primary-font;
+    // font-family: $primary-font;
+    font-size: 100%;
     color: $primary-color;
 }
 
@@ -12,8 +13,16 @@ header {
     color: $background-color;
     position: sticky;
     top: 0;
+    font-size: 2em;
+    
 
+    .header-links {
+        display: flex;
+        gap: 24px;
+        font-size: .5em;
+    }
 }
+
 
 a {
     text-decoration: none;
