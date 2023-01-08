@@ -14,6 +14,7 @@ header {
     position: sticky;
     top: 0;
     font-size: 2em;
+    z-index: 2;
     
 
     .header-links {
@@ -21,7 +22,7 @@ header {
         gap: 24px;
         font-size: .5em;
     }
-    
+
     .nav-header {
         display: flex;
         height: 80px;
@@ -36,3 +37,47 @@ a {
     text-decoration: none;
     color: $background-color;
 }
+
+.home-section {
+    display: grid;
+
+    .intro-card {
+        display: grid;
+        background: green;
+        margin: 0 10% 0 10%;
+        padding: 0 5% 0 5%;
+        height: 100vh;
+        border-radius: 0 0 10px 10px;
+        font-size: 36px;
+        overflow: hidden;
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+        
+
+        h1 {
+            display: flex;
+            font-size: 1em;
+            margin: 0;
+            padding-top: 24px;
+            justify-content: flex-end;
+            z-index: 1;
+        }
+
+        p {
+            display: flex;
+            font-size: .75em;
+            font-style: thin;
+            margin: 0;
+            justify-content: flex-end;
+            color: $tertiary-color;
+            z-index: 1;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            
+        }
+
+    }
+}
+

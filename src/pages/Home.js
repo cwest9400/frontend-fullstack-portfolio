@@ -5,7 +5,7 @@ function Home(props) {
         <section className="home-section">
             <div className="intro-card">
                 <h1>I'm a software engineer who is passionate<br/>about turning obstacles into opportunity,</h1>
-                <h3>focusing on the human stuck in the middle.</h3>
+                <p>focusing on the human stuck in the middle.</p>
                 <img src={headshot}/>
             </div>
         </section>

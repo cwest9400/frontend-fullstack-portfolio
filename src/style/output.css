@@ -10,6 +10,7 @@ header {
   position: sticky;
   top: 0;
   font-size: 2em;
+  z-index: 2;
 }
 header .header-links {
   display: flex;
@@ -27,6 +28,42 @@ header .nav-header {
 a {
   text-decoration: none;
   color: #fdfdfd;
+}
+
+.home-section {
+  display: grid;
+}
+.home-section .intro-card {
+  display: grid;
+  background: green;
+  margin: 0 10% 0 10%;
+  padding: 0 5% 0 5%;
+  height: 100vh;
+  border-radius: 0 0 10px 10px;
+  font-size: 36px;
+  overflow: hidden;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.home-section .intro-card h1 {
+  display: flex;
+  font-size: 1em;
+  margin: 0;
+  padding-top: 24px;
+  justify-content: flex-end;
+  z-index: 1;
+}
+.home-section .intro-card p {
+  display: flex;
+  font-size: 0.75em;
+  font-style: thin;
+  margin: 0;
+  justify-content: flex-end;
+  color: #afafaf;
+  z-index: 1;
+}
+.home-section .intro-card img {
+  max-width: 80%;
+  height: auto;
 }
 
 /*# sourceMappingURL=output.css.map */
