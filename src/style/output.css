@@ -1,6 +1,5 @@
 body {
   background-color: #fdfdfd;
-  font-size: 100%;
   color: #000000;
 }
 
@@ -34,46 +33,46 @@ a {
   display: flex;
   justify-content: center;
 }
-.home-section .intro-card {
+
+.intro-card {
   display: flex;
   flex-direction: column;
-  background: green;
-  margin: 0 0 0 0;
-  padding: 0 6% 0 6%;
-  max-height: 720px;
-  width: auto;
+  background: #ffffff;
+  margin: 0 10% 0 10%;
+  padding: 0 5% 0 5%;
+  height: auto;
+  width: 100%;
   border-radius: 0 0 10px 10px;
   font-style: normal;
-  font-size: 36px;
-  line-height: 72px;
-  overflow: clip;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
-  object-fit: contain;
 }
-.home-section .intro-card .p1 {
-  display: block;
-  font-size: 1em;
+
+h1 {
+  font-size: 1.75em;
   font-weight: 500;
   margin: 0;
   padding-top: 24px;
   text-align: right;
   word-wrap: break-word;
 }
-.home-section .intro-card .p2 {
-  font-size: 0.6em;
+
+p {
+  font-size: 1.3em;
   font-style: thin;
   margin: 0;
+  padding-top: 20px;
   text-align: right;
   color: #afafaf;
   word-wrap: break-word;
 }
-.home-section .intro-card .img-headshot {
+
+.img-headshot {
   display: flex;
   justify-content: flex-start;
-  max-height: 90%;
+  align-items: flex-end;
+  height: 100%;
   width: auto;
   object-fit: contain;
-  border: solid 2px;
 }
 
 /*# sourceMappingURL=output.css.map */
