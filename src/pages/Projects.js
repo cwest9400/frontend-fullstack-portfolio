@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-// import "../style/projects.css"
 
 function Projects(props) {
     const [projects, setProjects] = useState([])
@@ -16,7 +15,7 @@ function Projects(props) {
     const loaded = () => {
         return (
             projects.map((project) => (
-                <div className="container" key={project.name}>
+                <div className="project-container" key={project.name}>
                     
                         <div className="project-card">
                             <h1>{project.name}</h1>

@@ -1,11 +1,10 @@
 
-
-
 //IMPORT COMPONENTS
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { Route, Routes } from "react-router-dom"
 import React from 'react';
+import ProjectHeader from "./components/ProjectHeader";
 //IMPORT PAGES
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -25,7 +24,7 @@ function App() {
       {/* <Route path ="/projects" element={<Projects URL={URL} />}/>
       <Route path ="/about" element={<About URL={URL} />}/> */}
     </Routes>
-    <Projects />
+    <ProjectHeader />
     <Footer />
     </div>
   );

@@ -19,7 +19,7 @@ header {
   .header-links {
     display: flex;
     gap: 24px;
-    font-size: 0.5em;
+    font-size: .75em;
   }
 
   .nav-header {
@@ -97,12 +97,29 @@ a {
       font-size: 2em;
       border-radius: 4px;
     }
-    
-//PROJECTS
-    .container {
-      display: inline-flex;
+//PROJECT NAV HEADER
+.nav-project-header {
+  display: flex;
+  margin: 0 10% 0 10%;
+  padding-top: 24px;
+
+  
+  h2 {
+    padding-right: 200px;
+  }
+
+}
+.project-links {
+  display: flex;
+  gap: 24px;
+}
+
+
+//PROJECTS CONTAINER
+    .project-container {
+      display: flex;
       
-      padding: 20px;
+      padding-right: 20px;
       
       /* justify-content: center; */
       

@@ -14,7 +14,7 @@ header {
 header .header-links {
   display: flex;
   gap: 24px;
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 header .nav-header {
   display: flex;
@@ -86,9 +86,23 @@ p {
   border-radius: 4px;
 }
 
-.container {
-  display: inline-flex;
-  padding: 20px;
+.nav-project-header {
+  display: flex;
+  margin: 0 10% 0 10%;
+  padding-top: 24px;
+}
+.nav-project-header h2 {
+  padding-right: 200px;
+}
+
+.project-links {
+  display: flex;
+  gap: 24px;
+}
+
+.project-container {
+  display: flex;
+  padding-right: 20px;
   /* justify-content: center; */
 }
 
