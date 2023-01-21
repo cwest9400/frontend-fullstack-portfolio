@@ -20,7 +20,7 @@ function Projects(props) {
                 <div className="project-container">
             {projects.map((project) => {
                  return (
-                    <Link to={`/details/${project.name}`} key={project.name}>
+                    <Link to={`/project/${project.name}`} key={project.id}>
                         <ProjectCard name={project.name}/>
                     </Link>
                  )

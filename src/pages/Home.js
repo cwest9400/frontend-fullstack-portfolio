@@ -1,4 +1,6 @@
 import headshot from "../images/headshot.png"
+import ProjectHeader from "../components/ProjectHeader"
+import About from "./About"
 
 function Home(props) {
     return (
@@ -12,9 +14,13 @@ function Home(props) {
                         <button className="button-cta">resume</button>
                         <button className="button-cta">linkdin</button>
                         <button className="button-cta">github</button>
-                        
+
                     </div>
                 </div>
+            </div>
+            <div>
+                <ProjectHeader />
+                <About />
             </div>
         </section>
     )
