@@ -25,6 +25,7 @@ function App() {
       <Route path ="/about" element={<About URL={URL} />}/> */}
     </Routes>
     <ProjectHeader />
+    <About />
     <Footer />
     </div>
   );

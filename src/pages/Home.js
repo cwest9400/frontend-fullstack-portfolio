@@ -9,7 +9,10 @@ function Home(props) {
                 <div className="bottom-intro-card">
                     <div className="img-headshot">
                         <img src={headshot} />
-                        <button className="button-cta">contact</button>
+                        <button className="button-cta">resume</button>
+                        <button className="button-cta">linkdin</button>
+                        <button className="button-cta">github</button>
+                        
                     </div>
                 </div>
             </div>

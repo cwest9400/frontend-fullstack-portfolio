@@ -118,17 +118,21 @@ a {
 //PROJECTS CONTAINER
     .project-container {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 10% 0 10%;
+      row-gap: 10px;
+      padding-top: 24px;
       
-      padding-right: 20px;
       
-      /* justify-content: center; */
       
   }
   .project-card {
-      background-color: rgb(121, 174, 174);
+      background-color: $secondary-color;
+
       /* display: flex;
       flex-direction: column; */
-      width: 500px;
+      width: 300px;
       /* justify-content: center;
       align-items: center; */
       gap: 5px;

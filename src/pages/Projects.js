@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
+import { Link } from 'react-router-dom'
+import ProjectCard from '../components/ProjectCard'
 
 function Projects(props) {
     const [projects, setProjects] = useState([])
@@ -14,25 +16,25 @@ function Projects(props) {
 
     const loaded = () => {
         return (
-            projects.map((project) => (
-                <div className="project-container" key={project.name}>
-                    
-                        <div className="project-card">
-                            <h1>{project.name}</h1>
-
-                            <img src={project.image} className="project-image" />
-
-                            <a href={project.git}>
-                                <button>Github</button>
-                            </a>
-                            <a href={project.live}>
-                                <button>Live site</button>
-                            </a>
-                        </div>
-                    
-                </div>
-            ))
+            <div>
+                <div className="project-container">
+            {projects.map((project) => {
+                 return (
+                    <Link to={`/details/${project.name}`} key={project.name}>
+                        <ProjectCard name={project.name}/>
+                    </Link>
+                 )
+            }
         )
+    }
+    </div>
+    </div>
+    )    
+    
+                 
+                    
+
+
     }
     return (
         projects ? loaded() : <h1>Loading...</h1>)
