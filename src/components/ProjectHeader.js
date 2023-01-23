@@ -5,7 +5,7 @@ function ProjectHeader (props) {
         <nav className="nav-project-header">
             
                 <div>
-            <h2>projects</h2>
+            <h1>projects.</h1>
             </div>
             <div className="project-links">
             <p>code</p>

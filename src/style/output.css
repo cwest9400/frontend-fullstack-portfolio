@@ -37,8 +37,8 @@ a {
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  margin: 0 auto;
-  padding: 0 5% 0 5%;
+  margin: 0px auto;
+  padding: 0 5% 0px 5%;
   height: auto;
   width: 80%;
   border-radius: 0 0 10px 10px;
@@ -47,7 +47,7 @@ a {
 }
 
 h1 {
-  font-size: 1.75em;
+  font-size: 2em;
   font-weight: 500;
   margin: 0;
   padding-top: 24px;
@@ -87,10 +87,10 @@ p {
 
 .nav-project-header {
   display: flex;
-  margin: 0 10% 0 10%;
+  margin: 96px 5% 0 5%;
   padding-top: 24px;
 }
-.nav-project-header h2 {
+.nav-project-header h1 {
   padding-right: 200px;
 }
 
@@ -101,11 +101,12 @@ p {
 
 .project-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 10% 0 10%;
-  row-gap: 10px;
-  padding-top: 24px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 0 5% 0 5%;
+  gap: 24px;
+  padding: 24px 0 24px 0;
+  overflow: scroll;
 }
 
 .project-card {
@@ -113,19 +114,52 @@ p {
   /* display: flex;
   flex-direction: column; */
   width: 300px;
+  height: 400px;
   /* justify-content: center;
   align-items: center; */
   gap: 5px;
   border-radius: 10px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.project-image {
-  width: 100%;
+.card-image {
+  max-width: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .project-details {
   display: flex;
   justify-content: left;
+}
+
+.about-section h1 {
+  margin-top: 96px;
+  text-align: left;
+  padding: 0 5% 0 5%;
+  font-size: 2em;
+}
+
+.about-card {
+  display: flex;
+  background: #ffffff;
+  margin: 24px auto;
+  padding: 0 5% 0 5%;
+  height: auto;
+  width: 80%;
+  border-radius: 10px 10px 10px 10px;
+  font-style: normal;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+  column-gap: 48px;
+}
+.about-card .about-info {
+  width: 50%;
+  padding: 16px 0px 16px 0px;
+}
+.about-card .tech-stack {
+  width: 50%;
+  padding: 16px 0px 16px 0px;
 }
 
 /*# sourceMappingURL=output.css.map */

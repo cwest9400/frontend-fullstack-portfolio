@@ -19,8 +19,13 @@ function Home(props) {
                 </div>
             </div>
             <div>
+                <div id="projects">
                 <ProjectHeader />
+                </div>
+                <div id="about">
                 <About />
+                </div>
+                
             </div>
         </section>
     )

@@ -13,7 +13,7 @@ function Projects(props) {
             })
             .catch(console.error)
     }, [])
-
+console.log(projects)
     const loaded = () => {
         return (
             <div>
@@ -21,7 +21,7 @@ function Projects(props) {
             {projects.map((project) => {
                  return (
                     <Link to={`/project/${project.name}`} key={project.id}>
-                        <ProjectCard name={project.name}/>
+                        <ProjectCard name ={project.name} image= {project.image}/>
                     </Link>
                  )
             }
