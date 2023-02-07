@@ -2,7 +2,7 @@ import headshot from "../images/headshot.png"
 import ProjectHeader from "../components/ProjectHeader"
 import About from "./About"
 
-function Home(props) {
+function Home() {
     return (
         <section className="home-section">
             <div className="intro-card">

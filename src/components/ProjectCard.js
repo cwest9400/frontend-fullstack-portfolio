@@ -7,19 +7,20 @@ export default function ProjectCard(props) {
     return (
         <div className="project-card">
             <div className="card-title"><h1>{name}</h1></div>
-            <div className="card-image">
-                <img
+            <div className="card-image-container">
+                <img className="project-image"
                     src={imgUrl}
                     alt="project thumbnail" />
+                
             </div>
-            <div className="button-links">
+            
                 {/* <a href={props.git}>
             <button>github</button>
         </a>
         <a href={props.live}>
  <button>Live site</button>
 </a> */}
-            </div>
+            
         </div>
     )
 }
