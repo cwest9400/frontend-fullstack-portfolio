@@ -1,6 +1,7 @@
-
+import DEV_ICONS from "../images/dev_icons/devIcons"
 
 function About(props) {
+  console.log(DEV_ICONS)
   return (
     <div className="about-section">
       <h1>about.</h1>
@@ -10,13 +11,19 @@ function About(props) {
         </div>
         <div className="tech-stack">
           Technology that I've worked with
-      <ol>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        <li>HTML</li>
-      </ol>
+          <div className="icon-container" >
+          {DEV_ICONS.map((icons) => {
+            return (
+                <div className="icon-card" key={icons.name}>
+                  <img className="icons" src={icons.img} />
+                  {icons.name}
+                </div>
+            )
+          })}
+          </div>
+
         </div>
-      
+
 
       </div>
 
