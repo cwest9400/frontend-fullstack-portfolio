@@ -1,0 +1,17 @@
+const DEV_ICONS = {
+    html5:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+    javaScript:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+    python3:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    nodeJs:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg",
+    React:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    css3:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+    sass:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    django:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+    postgresql:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg",
+    mongoDb:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    expressJs:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    figma:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    adobeXd:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg",
+    photoshop:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg",
+    github:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+}

@@ -160,7 +160,7 @@ overflow: hidden;
   }
   .project-image {
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0) 27.14%);
+    
   }
   .gradient {
     position: absolute;
@@ -192,11 +192,7 @@ overflow: hidden;
 }
 .about-card {
   display: flex;
-  // align-items: flex-end;
   background: $secondary-color;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 0 10% 0 10%;
   margin: 24px auto;
   padding: 0 5% 0 5%;
   height: auto;
@@ -212,6 +208,7 @@ overflow: hidden;
     
   }
   .tech-stack {
+    
     width: 50%;
     padding: 16px 0px 16px 0px;
     
