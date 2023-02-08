@@ -3,7 +3,6 @@
 
 body {
   background-color: $background-color;
-  // font-family: $primary-font;
   color: $primary-color;
 }
 
@@ -36,19 +35,14 @@ a {
 }
 
 .home-section {
-  // display: flex;
   justify-content: center;
-  // margin-bottom: 72px;
+  background-color: cornflowerblue;
 }
 
 .intro-card {
   display: flex;
   flex-direction: column;
-  // align-items: flex-end;
   background: $secondary-color;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 0 10% 0 10%;
   margin: 0px auto;
   padding: 0 5% 0px 5%;
   height: auto;
@@ -56,17 +50,16 @@ a {
   border-radius: 0 0 10px 10px;
   font-style: normal;
   box-shadow: $box-shadow;
+  
 }
 
 h1 {
   font-size: 1.75em;
-
-  // font-size: 1em;
   font-weight: 500;
   margin: 0;
   padding-top: 24px;
   text-align: right;
-  word-wrap: break-word;
+  // word-wrap: break-word;
 }
 
 p {
@@ -85,7 +78,6 @@ p {
   width: auto;
   object-fit: contain;
   padding: 0 0 0 20px;
-  background-color: blue;
   .face {
     width: auto;
     height: fit-content;
@@ -104,6 +96,8 @@ p {
       font-family: poppins;
       font-size: 1.5em;
       border-radius: 4px;
+      border: solid;
+      color: $primary-color;
       
     }
   }
@@ -112,8 +106,9 @@ p {
 //PROJECT NAV HEADER
 .nav-project-header {
   display: flex;
-  margin: 96px 5% 0 5%;
-  padding-top: 24px;
+  padding: 100px 100px 0 100px;
+  font-size: 1.75em;
+  background-color: aqua;
 
   h1 {
     padding-right: 200px;
@@ -127,11 +122,11 @@ p {
 //PROJECTS CONTAINER
 .project-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 5% 0 5%;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
   padding: 24px 0 24px 0;
+  background-color: cadetblue;
 }
 
 .project-card {
@@ -139,27 +134,32 @@ p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 60%;
   height: 350px;
-
   align-items: center;
   gap: 5px;
   border-radius: 10px;
   box-shadow: $box-shadow;
+  .card-image-container {
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    .project-image {
+      width: 100%;
+    }
+  }
+  
+  .project-description {
+
+  }
 }
 
-.card-image-container {
-  height: 200px;
-  object-fit: contain;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  text-align: center;
-}
-.project-image {
-  width: 100%;
-}
+
+
 
 ///////////////
 /// project details

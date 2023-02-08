@@ -31,6 +31,7 @@ a {
 
 .home-section {
   justify-content: center;
+  background-color: cornflowerblue;
 }
 
 .intro-card {
@@ -52,7 +53,6 @@ h1 {
   margin: 0;
   padding-top: 24px;
   text-align: right;
-  word-wrap: break-word;
 }
 
 p {
@@ -71,7 +71,6 @@ p {
   width: auto;
   object-fit: contain;
   padding: 0 0 0 20px;
-  background-color: blue;
 }
 .img-headshot .face {
   width: auto;
@@ -91,12 +90,15 @@ p {
   font-family: poppins;
   font-size: 1.5em;
   border-radius: 4px;
+  border: solid;
+  color: #000000;
 }
 
 .nav-project-header {
   display: flex;
-  margin: 96px 5% 0 5%;
-  padding-top: 24px;
+  padding: 100px 100px 0 100px;
+  font-size: 1.75em;
+  background-color: aqua;
 }
 .nav-project-header h1 {
   padding-right: 200px;
@@ -109,11 +111,11 @@ p {
 
 .project-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 5% 0 5%;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
   padding: 24px 0 24px 0;
+  background-color: cadetblue;
 }
 
 .project-card {
@@ -121,15 +123,14 @@ p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 60%;
   height: 350px;
   align-items: center;
   gap: 5px;
   border-radius: 10px;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
 }
-
-.card-image-container {
+.project-card .card-image-container {
   height: 200px;
   object-fit: contain;
   display: block;
@@ -138,11 +139,9 @@ p {
   width: 100%;
   text-align: center;
 }
-
-.project-image {
+.project-card .card-image-container .project-image {
   width: 100%;
 }
-
 .project-details {
   display: flex;
   justify-content: left;
