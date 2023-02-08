@@ -154,6 +154,12 @@ p {
   flex-direction: column;
   width: 50%;
   background-color: blueviolet;
+  gap: 8px;
+}
+.project-card-title {
+  text-align: center;
+  
+
 }
 
 .button-project-links {
@@ -165,6 +171,7 @@ p {
   border-radius: 4px;
   border: solid;
   color: $primary-color;
+  
 }
 
 ///////////////
@@ -174,6 +181,9 @@ p {
 .project-details {
   display: flex;
   justify-content: left;
+  h1 {
+    align-items: left;
+  }
 }
 
 ////
