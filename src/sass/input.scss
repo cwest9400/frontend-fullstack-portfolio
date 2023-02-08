@@ -5,7 +5,6 @@ body {
   background-color: $background-color;
   // font-family: $primary-font;
   color: $primary-color;
-
 }
 
 header {
@@ -19,7 +18,7 @@ header {
   .header-links {
     display: flex;
     gap: 24px;
-    font-size: .75em;
+    font-size: 0.75em;
   }
 
   .nav-header {
@@ -27,7 +26,7 @@ header {
     height: 80px;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10% 0 10%;
+    padding: 0 100px 0 100px;
   }
 }
 
@@ -40,139 +39,136 @@ a {
   // display: flex;
   justify-content: center;
   // margin-bottom: 72px;
-  
-  
 }
 
-  .intro-card {
-    display: flex;
-    flex-direction: column;
-    // align-items: flex-end;
-    background: $secondary-color;
-    // justify-content: center;
-    // align-items: center;
-    // margin: 0 10% 0 10%;
-    margin: 0px auto;
-    padding: 0 5% 0px 5%;
-    height: auto;
-    width: 80%;
-    border-radius: 0 0 10px 10px;
-    font-style: normal;
-    box-shadow: $box-shadow;
+.intro-card {
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-end;
+  background: $secondary-color;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 0 10% 0 10%;
+  margin: 0px auto;
+  padding: 0 5% 0px 5%;
+  height: auto;
+  width: 60%;
+  border-radius: 0 0 10px 10px;
+  font-style: normal;
+  box-shadow: $box-shadow;
+}
+
+h1 {
+  font-size: 1.75em;
+
+  // font-size: 1em;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 24px;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+p {
+  font-size: 1.3em;
+  font-style: thin;
+  margin: 0;
+  padding-top: 20px;
+  text-align: right;
+  color: $tertiary-color;
+  word-wrap: break-word;
+}
+
+.img-headshot {
+  display: flex;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  padding: 0 0 0 20px;
+  background-color: blue;
+  .face {
+    width: auto;
+    height: fit-content;
+    overflow: auto;
   }
 
-    h1 {
-      font-size: 2em;
-
-      // font-size: 1em;
-      font-weight: 500;
-      margin: 0;
-      padding-top: 24px;
-      text-align: right;
-      word-wrap: break-word;
-    }
-
-    p {
-      font-size: 1.3em;
-      font-style: thin;
-      margin: 0;
-      padding-top: 20px;
-      text-align: right;
-      color: $tertiary-color;
-      word-wrap: break-word;
-    }
-
-    .img-headshot {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
-      height:100%;
-      width: auto;
-      object-fit: contain;
-      padding: 0 0 0 20px;
-      // border: solid 2px;
-    }
-
+  .button-cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     .button-cta {
       width: auto;
       padding: 8px;
       background-color: white;
-      margin: auto auto;
       font-family: poppins;
-      font-size: 2em;
+      font-size: 1.5em;
       border-radius: 4px;
+      
     }
+  }
+}
+
 //PROJECT NAV HEADER
 .nav-project-header {
   display: flex;
   margin: 96px 5% 0 5%;
   padding-top: 24px;
 
-
-  
   h1 {
     padding-right: 200px;
   }
-
 }
 .project-links {
   display: flex;
   gap: 24px;
 }
 
-
 //PROJECTS CONTAINER
-    .project-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 0 5% 0 5%;
-      gap: 24px;
-      padding: 24px 0 24px 0;
-      
-      
-  }
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 5% 0 5%;
+  gap: 24px;
+  padding: 24px 0 24px 0;
+}
 
-  .project-card {
-      background-color: $secondary-color;
-overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      width: 250px;
-      height:350px;
-      
-      align-items: center;
-      gap: 5px;
-      border-radius: 10px;
-      box-shadow: $box-shadow;
-      
-  
-  }
-  
-  .card-image-container {
-     height: 200px;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
-  }
-  .project-image {
-    width: 100%;
-    
-  }
-  
-  
+.project-card {
+  background-color: $secondary-color;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+}
+
+.card-image-container {
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+.project-image {
+  width: 100%;
+}
+
 ///////////////
 /// project details
-/// 
+///
 
 .project-details {
   display: flex;
   justify-content: left;
 }
-
 
 ////
 /// ABOUT
@@ -200,10 +196,8 @@ overflow: hidden;
   .about-info {
     width: 50%;
     padding: 16px 0px 16px 0px;
-    
   }
   .tech-stack {
-    
     width: 50%;
     padding: 16px 0px 16px 0px;
 
@@ -222,15 +216,9 @@ overflow: hidden;
         padding: 10px;
         font-weight: 200;
       }
-     
 
       .icons {
-
       }
-
     }
   }
-
-
 }
-

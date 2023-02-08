@@ -7,11 +7,11 @@ function ProjectHeader (props) {
                 <div>
             <h1>projects.</h1>
             </div>
-            <div className="project-links">
+            {/* <div className="project-links">
             <p>code</p>
             <p>design</p>
             <p>art</p>
-            </div>
+            </div> */}
             
         </nav>
         <Projects />

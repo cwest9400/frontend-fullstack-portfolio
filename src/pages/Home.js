@@ -6,14 +6,16 @@ function Home() {
     return (
         <section className="home-section">
             <div className="intro-card">
-                <h1>I'm a software engineer & designer who is passionate <br />about turning obstacles into opportunity,</h1>
+                <h1>I'm a software engineer & designer who is dedicated <br />to turning obstacles into opportunity,</h1>
                 <p>focusing on the human stuck in the middle.</p>
                 <div className="bottom-intro-card">
                     <div className="img-headshot">
-                        <img src={headshot} />
-                        <button className="button-cta">resume</button>
-                        <button className="button-cta">linkdin</button>
-                        <button className="button-cta">github</button>
+                        <img className="face" src={headshot} />
+                        <div className="button-cta-container">
+                        <a  className="button-cta" href="https://docs.google.com/document/d/1-indit79-0HniRROGkSluoAkWC3AK8OT_nchmEdmG8U/edit?usp=share_link" target="_blank">resume</a>
+                        <a  className="button-cta" href="https://www.linkedin.com/in/christopher-west-64a74255/" target="_blank">linkedin</a>
+                        <a  className="button-cta" href="https://github.com/cwest9400" target="_blank">gitHub</a>
+                        </div>
 
                     </div>
                 </div>
