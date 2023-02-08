@@ -17,11 +17,11 @@ console.log(projects)
     const loaded = () => {
         return (
             <div>
-                <div className="project-container">
+                <div className="project-section">
             {projects.map((project) => {
                  return (
                     <Link to={`/project/${project.name}`} key={project.id}>
-                        <ProjectCard name ={project.name} image= {project.image}/>
+                        <ProjectCard name ={project.name} image= {project.image} id={project.id}/>
                     </Link>
                  )
             }

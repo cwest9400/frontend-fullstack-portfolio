@@ -50,7 +50,6 @@ a {
   border-radius: 0 0 10px 10px;
   font-style: normal;
   box-shadow: $box-shadow;
-  
 }
 
 h1 {
@@ -98,7 +97,6 @@ p {
       border-radius: 4px;
       border: solid;
       color: $primary-color;
-      
     }
   }
 }
@@ -120,46 +118,54 @@ p {
 }
 
 //PROJECTS CONTAINER
-.project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 24px 0 24px 0;
+.project-section {
   background-color: cadetblue;
 }
 
 .project-card {
-  background-color: $secondary-color;
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  background: $secondary-color;
+  margin: 24px auto;
+  padding: 0 5% 0 5%;
+  height: 400px;
   width: 60%;
-  height: 350px;
-  align-items: center;
-  gap: 5px;
-  border-radius: 10px;
+  border-radius: 10px 10px 10px 10px;
+  font-style: normal;
   box-shadow: $box-shadow;
-  .card-image-container {
-    height: 200px;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
-    .project-image {
-      width: 100%;
-    }
-  }
-  
-  .project-description {
-
-  }
+  column-gap: 48px;
+}
+.card-image-container {
+  display: flex;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  padding: 0 0 0 20px;
+  background-color: hotpink;
+}
+.project-image {
+  width: auto;
+    height: fit-content;
+    overflow: auto;
+    
 }
 
+.project-description {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: blueviolet;
+}
 
-
+.button-project-links {
+  width: auto;
+  padding: 8px;
+  background-color: white;
+  font-family: poppins;
+  font-size: 1.5em;
+  border-radius: 4px;
+  border: solid;
+  color: $primary-color;
+}
 
 ///////////////
 /// project details
@@ -187,7 +193,7 @@ p {
   margin: 24px auto;
   padding: 0 5% 0 5%;
   height: auto;
-  width: 80%;
+  width: 60%;
   border-radius: 10px 10px 10px 10px;
   font-style: normal;
   box-shadow: $box-shadow;
@@ -211,7 +217,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80px;
+        width: 60px;
         height: auto;
         padding: 10px;
         font-weight: 200;

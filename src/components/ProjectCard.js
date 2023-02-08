@@ -1,4 +1,4 @@
-
+import PROJECT_IMG from "../images/projectImg"
 
 export default function ProjectCard(props) {
     const name = props.name
@@ -6,26 +6,28 @@ export default function ProjectCard(props) {
 
     return (
         <div className="project-card">
-            <div className="card-title"><h1>{name}</h1></div>
-            <div className="card-info-container">
-                <div className="card-image-container">
-                    <img className="project-image"
-                        src={imgUrl}
-                        alt="project thumbnail" />
-                </div>
-                <div className="project-description">
-                    <a href={props.git}>
-                        <button>github</button>
+            <div className="project-description">
+                <h1 className="card-title">{name}</h1>
+                <div>description</div>
+                <div>technology</div>
+                <div>
+                    <a className="button-project-links" href={props.git}>
+                        gitHub
                     </a>
-                    <a href={props.live}>
-                        <button>Live site</button>
+                    <a className="button-project-links" href={props.live}>
+                        live site
                     </a>
                 </div>
             </div>
 
-
-
+            <div className="card-image-container">
+                <img className="face" src={PROJECT_IMG[props.id]} alt="project thumbnail" />
+            </div>
         </div>
+
+
+
+
     )
 }
 
