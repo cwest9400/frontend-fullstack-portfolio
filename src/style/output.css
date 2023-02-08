@@ -117,21 +117,19 @@ p {
   display: flex;
   background: #ffffff;
   margin: 24px auto;
-  padding: 0 5% 0 5%;
   height: 400px;
-  width: 60%;
+  width: 70%;
   border-radius: 10px 10px 10px 10px;
   font-style: normal;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
-  column-gap: 48px;
 }
 
 .card-image-container {
   display: flex;
-  height: 100%;
-  width: auto;
+  justify-content: center;
+  height: auto;
+  width: 100%;
   object-fit: contain;
-  padding: 0 0 0 20px;
   background-color: hotpink;
 }
 
@@ -144,7 +142,7 @@ p {
 .project-description {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   background-color: blueviolet;
 }
 
