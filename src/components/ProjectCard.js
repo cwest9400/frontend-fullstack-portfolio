@@ -1,3 +1,4 @@
+
 import PROJECT_IMG from "../images/projectImg"
 
 export default function ProjectCard(props) {
@@ -11,10 +12,12 @@ export default function ProjectCard(props) {
                 <div>description</div>
                 <div>technology</div>
                 <div>
-                    <a className="button-project-links" href={props.git}>
+                    
+                    <a className="button-project-links" href={props.git} target="_blank">
                         gitHub
                     </a>
-                    <a className="button-project-links" href={props.live}>
+                    
+                    <a className="button-project-links" href={props.live} target="_blank">
                         live site
                     </a>
                 </div>

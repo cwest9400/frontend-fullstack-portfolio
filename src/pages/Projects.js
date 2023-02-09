@@ -20,9 +20,9 @@ console.log(projects)
                 <div className="project-section">
             {projects.map((project) => {
                  return (
-                    <Link to={`/project/${project.name}`} key={project.id}>
-                        <ProjectCard name ={project.name} image= {project.image} id={project.id}/>
-                    </Link>
+                    
+                        <ProjectCard name ={project.name} image= {project.image} id={project.id} git={project.git} live={project.live} key={project.id}/>
+                    
                  )
             }
         )
