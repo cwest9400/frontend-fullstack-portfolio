@@ -4,7 +4,7 @@ import About from "./About"
 
 function Home() {
     return (
-        <section className="home-section">
+        <section className="home-section" id="home">
             <div className="intro-card">
                 <h1>I'm a software engineer & designer who is dedicated <br />to turning obstacles into opportunity,</h1>
                 <p>focusing on the human stuck in the middle.</p>

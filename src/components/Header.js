@@ -9,7 +9,7 @@ function Header (props) {
         <nav className="nav-header">
             
                 <div>
-            <Link to="/">christopher west</Link>
+            <AnchorLink href='#home'>christopher west</AnchorLink>
             </div>
             <div className="header-links">
             <AnchorLink href='#about'>about</AnchorLink>

@@ -2,16 +2,21 @@
 import PROJECT_IMG from "../images/projectImg"
 
 export default function ProjectCard(props) {
-    const name = props.name
-    const imgUrl = props.image
+    
 
     return (
         <div className="project-card">
             <div className="project-description">
-                <h1 className="project-card-title">{name}</h1>
-                <div>description</div>
-                <div>technology</div>
-                <div>
+                <h1 className="project-card-title">{props.name}</h1>
+                <div>{props.type}</div>
+                <div className="project-desc-paragraph">{props.desc} </div>
+                <div className="project-technology-title">technology</div>
+                <div className="project-technology-container">
+                    {props.tech}
+                    </div>
+                
+     
+                <div className="project-button-container">
                     
                     <a className="button-project-links" href={props.git} target="_blank">
                         gitHub

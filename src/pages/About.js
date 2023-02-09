@@ -7,10 +7,19 @@ function About(props) {
       <h1>about.</h1>
       <div className="about-card">
         <div className="about-info">
-          I was one of those kids with an endless imagination (I still am), always drawing, tinkering, creating, and building. Later in life and throughout my work experience, I've learned to harness my natural interests in design to facilitate positive influence on day-to-day life; Including the organizations that I've been a part of.
+          <p className="bio-top">
+        As a full-stack software engineer with over 15 years of experience in manufacturing and operations, I bring a unique blend of technical expertise and practical design to every project.
+        </p>
+        <h3 className="life-outside">life outside the office</h3>
+        <p className="bio">I'm usually hanging out with my family. My wife and I love adventure and showing the world to our new daughter.</p>
+        
+<p className="bio">
+I'm also a part-time wizard and enjoy wizardly activities such as playing Magic: The Gathering, painting fantasy illustrations and woodworking. One day, I will finally finish the illustrated card game that I started a few years ago.</p>
+
+        
         </div>
         <div className="tech-stack">
-          Technology that I've worked with
+          <h3 className="technology-title">Technology that I've worked with</h3>
           <div className="icon-container" >
           {DEV_ICONS.map((icons) => {
             return (

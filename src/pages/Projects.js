@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { Link } from 'react-router-dom'
 import ProjectCard from '../components/ProjectCard'
 
 function Projects(props) {
@@ -21,7 +20,7 @@ console.log(projects)
             {projects.map((project) => {
                  return (
                     
-                        <ProjectCard name ={project.name} image= {project.image} id={project.id} git={project.git} live={project.live} key={project.id}/>
+                        <ProjectCard type={project.type} desc={project.desc} tech={project.tech} name ={project.name} image= {project.image} id={project.id} git={project.git} live={project.live} key={project.id}/>
                     
                  )
             }

@@ -36,7 +36,7 @@ a {
 
 .home-section {
   justify-content: center;
-  background-color: cornflowerblue;
+  // background-color: cornflowerblue;
 }
 
 .intro-card {
@@ -80,7 +80,8 @@ p {
   .face {
     width: auto;
     height: fit-content;
-    overflow: auto;
+    overflow: clip;
+    border-radius: 0 10px 10px 0;
   }
 
   .button-cta-container {
@@ -106,7 +107,7 @@ p {
   display: flex;
   padding: 100px 100px 0 100px;
   font-size: 1.75em;
-  background-color: aqua;
+  // background-color: aqua;
 
   h1 {
     padding-right: 200px;
@@ -119,7 +120,7 @@ p {
 
 //PROJECTS CONTAINER
 .project-section {
-  background-color: cadetblue;
+  // background-color: cadetblue;
 }
 
 .project-card {
@@ -139,26 +140,59 @@ p {
   height: auto;
   width: 100%;
   object-fit: contain;
+  overflow: clip;
   
-  background-color: hotpink;
+  // background-color: hotpink;
 }
 .project-image {
   width: auto;
     height: fit-content;
     overflow: auto;
+    border-radius: 0 10px 10px 0;
     
 }
 
 .project-description {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  background-color: blueviolet;
-  gap: 8px;
+  width: 70%;
+  padding:0 8px 0 24px;
+  // background-color: blueviolet;
+  gap: 16px;
+  word-break: normal;
+  font-size: .9em;
+  
 }
 .project-card-title {
   text-align: center;
   
+  
+  
+
+}
+.project-desc-paragraph {
+  font-weight: 300;
+  
+}
+.project-technology-container {
+  flex-grow: 1;
+  font-weight: 300;
+}
+
+.project-technology-title {
+  font-weight: 700;
+  padding-top: 8px;
+  
+}
+
+
+.project-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 24px 0;
+  gap: 16px;
+ 
+
 
 }
 
@@ -194,7 +228,7 @@ p {
     margin-top: 96px;
     text-align: left;
     padding: 0 5% 0 5%;
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 .about-card {
@@ -207,11 +241,31 @@ p {
   border-radius: 10px 10px 10px 10px;
   font-style: normal;
   box-shadow: $box-shadow;
-  column-gap: 48px;
+  column-gap: 24px;
 
   .about-info {
     width: 50%;
     padding: 16px 0px 16px 0px;
+    
+  }
+  .bio-top {
+    text-align: left;
+    color: black;
+  }
+  .life-outside {
+    padding-top: 16px;
+
+  }
+  .bio {
+    padding-top: 0;
+    text-align: left;
+    color: black;
+    font-weight: 300;
+    padding-bottom: 8px;
+    font-size: 1em;
+  }
+  .technology-title {
+    text-align: center;
   }
   .tech-stack {
     width: 50%;
@@ -221,7 +275,7 @@ p {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 16px;
+      padding: 24px;
 
       .icon-card {
         display: flex;
@@ -229,12 +283,10 @@ p {
         align-items: center;
         width: 60px;
         height: auto;
-        padding: 10px;
+        padding: 14px;
         font-weight: 200;
       }
 
-      .icons {
-      }
     }
   }
 }
