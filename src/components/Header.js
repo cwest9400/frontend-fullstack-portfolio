@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom"
-
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../style/output.css"
 
