@@ -11,7 +11,7 @@ header {
   color: $background-color;
   position: sticky;
   top: 0;
-  font-size: 2em;
+  font-size: 2rem;
   z-index: 2;
 
   .header-links {
@@ -149,9 +149,10 @@ p {
   // background-color: hotpink;
 }
 .project-image {
+  max-width: 250px;
+  height: fit-content;
   width: auto;
-    height: fit-content;
-    overflow: auto;
+    overflow: clip;
     border-radius: 0 10px 10px 0;
     
 }
@@ -299,6 +300,14 @@ p {
 
     }
   }
+}
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height:auto;
+  padding: 16px;
+  text-align: center;
 }
 
 a.button-project-links:hover {

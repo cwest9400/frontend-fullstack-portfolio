@@ -12,7 +12,7 @@ function Home() {
                     <div className="img-headshot">
                         <img className="face" src={headshot} />
                         <div className="button-cta-container">
-                        <a  className="button-cta" href="https://docs.google.com/document/d/1-indit79-0HniRROGkSluoAkWC3AK8OT_nchmEdmG8U/edit?usp=share_link" target="_blank">resume</a>
+                        <a  className="button-cta" href="https://docs.google.com/document/d/1jbe_r5jrl1xw8UgKTTMA4mV014m3KPG2b2jZtoMY3wE/edit?usp=sharing" target="_blank">resume</a>
                         <a  className="button-cta" href="https://www.linkedin.com/in/christopher-west-64a74255/" target="_blank">linkedin</a>
                         <a  className="button-cta" href="https://github.com/cwest9400" target="_blank">gitHub</a>
                         </div>
@@ -27,7 +27,7 @@ function Home() {
                 <div id="about">
                 <About />
                 </div>
-                
+             
             </div>
         </section>
     )

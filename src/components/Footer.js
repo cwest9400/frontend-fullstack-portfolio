@@ -1,4 +1,6 @@
 function Footer(props) {
-    return
+    return (
+        <div className="footer">chrstphrwest@gmail.com</div>
+    )
 }
 export default Footer
