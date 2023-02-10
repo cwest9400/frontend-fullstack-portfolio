@@ -19,6 +19,7 @@ header {
     gap: 24px;
     font-size: 0.75em;
   }
+  
 
   .nav-header {
     display: flex;
@@ -27,11 +28,16 @@ header {
     justify-content: space-between;
     padding: 0 100px 0 100px;
   }
+  .header-links:hover {
+    color:rgb(155, 220, 237);
+  
+  }
 }
 
 a {
   text-decoration: none;
   color: $background-color;
+ 
 }
 
 .home-section {

@@ -23,6 +23,9 @@ header .nav-header {
   justify-content: space-between;
   padding: 0 100px 0 100px;
 }
+header .header-links:hover {
+  color: rgb(155, 220, 237);
+}
 
 a {
   text-decoration: none;
