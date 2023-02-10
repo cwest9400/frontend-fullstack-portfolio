@@ -261,4 +261,18 @@ a.button-project-links:hover {
   background-color: rgb(155, 220, 237);
 }
 
+@media only all and (max-width: 800px) {
+  [class="nav.header-links"] {
+    gap: 24px;
+    font-size: 0.75em;
+  }
+  [class="nav.nav-header"] {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px 0 0px;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */
