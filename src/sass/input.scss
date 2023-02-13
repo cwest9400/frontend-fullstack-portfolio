@@ -13,11 +13,17 @@ header {
   top: 0;
   font-size: 2rem;
   z-index: 2;
+  @media only all and (max-width: 800px) {
+ background-color: red;
+ font-size: 1.5em;
+
+  }
 
   .header-links {
     display: flex;
     gap: 24px;
     font-size: 0.75em;
+    
   }
   
 
@@ -27,13 +33,19 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 100px 0 100px;
+
+    @media only all and (max-width: 950px) {
+      padding: 0 24px 0 24px;
+     
   }
  
+}
 }
 
 a {
   text-decoration: none;
   color: $background-color;
+  
  
 }
 
@@ -53,6 +65,9 @@ a {
   border-radius: 0 0 10px 10px;
   font-style: normal;
   box-shadow: $box-shadow;
+  @media only all and (max-width: 950px) {
+    width: 80%;
+  }
 }
 
 h1 {
@@ -322,22 +337,8 @@ a.button-project-links:hover {
 
 }
 
-@media only all and (max-width: 800px) {
+@media only all and (min-width: 1px) {
  
-    [class="nav.header-links"] {
-      gap: 24px;
-      font-size: 0.75em;
-    }
-  
-    [class="nav.nav-header"] {
-      display: flex;
-      height: 80px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 0px 0 0px;
-    }
-  
-
 
 }
 

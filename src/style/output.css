@@ -11,6 +11,12 @@ header {
   font-size: 2rem;
   z-index: 2;
 }
+@media only all and (max-width: 800px) {
+  header {
+    background-color: red;
+    font-size: 1.5em;
+  }
+}
 header .header-links {
   display: flex;
   gap: 24px;
@@ -22,6 +28,11 @@ header .nav-header {
   align-items: center;
   justify-content: space-between;
   padding: 0 100px 0 100px;
+}
+@media only all and (max-width: 950px) {
+  header .nav-header {
+    padding: 0 24px 0 24px;
+  }
 }
 
 a {
@@ -44,6 +55,11 @@ a {
   border-radius: 0 0 10px 10px;
   font-style: normal;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+}
+@media only all and (max-width: 950px) {
+  .intro-card {
+    width: 80%;
+  }
 }
 
 h1 {
@@ -272,20 +288,6 @@ p {
 
 a.button-project-links:hover {
   background-color: rgb(155, 220, 237);
-}
-
-@media only all and (max-width: 800px) {
-  [class="nav.header-links"] {
-    gap: 24px;
-    font-size: 0.75em;
-  }
-  [class="nav.nav-header"] {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0px 0 0px;
-  }
 }
 
 /*# sourceMappingURL=output.css.map */
