@@ -6,7 +6,7 @@ function Home() {
     return (
         <section className="home-section" id="home">
             <div className="intro-card">
-                <h1>I'm a software engineer & designer who is dedicated <br />to turning obstacles into opportunities,</h1>
+                <h1>I'm a software engineer & designer who is dedicated to turning obstacles into opportunities,</h1>
                 <p>focused on the human stuck in the middle.</p>
                 <div className="bottom-intro-card">
                     <div className="img-headshot">
