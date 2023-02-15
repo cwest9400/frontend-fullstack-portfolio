@@ -389,8 +389,21 @@ p {
   text-align: left;
   color: black;
   font-weight: 300;
-  padding: 8px;
+  padding: 8px 8px 8px 8px;
   font-size: 1em;
+}
+@media only all and (max-width: 950px) {
+  .about-card .bio {
+    height: auto;
+    padding: 8px 16px 8px 16px;
+  }
+}
+.about-card .contact {
+  margin-top: 16px;
+  padding: 8px;
+  text-align: center;
+  border: solid;
+  font-weight: 700;
 }
 .about-card .technology-title {
   text-align: center;
