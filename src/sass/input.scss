@@ -315,6 +315,12 @@ p {
   font-style: normal;
   box-shadow: $box-shadow;
   column-gap: 24px;
+  @media only all and (max-width: 950px) {
+    width: 100%;
+    padding: 0 0 0px 0;
+    
+  }
+
 
   .about-info {
     width: 50%;

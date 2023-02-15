@@ -290,6 +290,12 @@ p {
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
   column-gap: 24px;
 }
+@media only all and (max-width: 950px) {
+  .about-card {
+    width: 100%;
+    padding: 0 0 0px 0;
+  }
+}
 .about-card .about-info {
   width: 50%;
   padding: 16px 0px 16px 0px;
