@@ -312,6 +312,7 @@ p {
   gap: 36px;
   @media only all and (max-width: 950px) {
     padding: 8px 0 16px 0;
+    justify-content: left;
     
   }
  
@@ -353,6 +354,11 @@ p {
     margin: 0px auto;
   width: 70%;
     font-size: 3em;
+    @media only all and (max-width: 950px) {
+      width: 100%;
+      padding: 0px 0 0px 0;
+      
+    }
   }
 }
 .about-card {
@@ -368,6 +374,7 @@ p {
   column-gap: 24px;
   @media only all and (max-width: 950px) {
     width: 100%;
+    flex-direction: column-reverse;
     padding: 0 0 0px 0;
     
   }
@@ -376,6 +383,11 @@ p {
   .about-info {
     width: 50%;
     padding: 16px 0px 16px 0px;
+    @media only all and (max-width: 950px) {
+      width: 100%;
+      padding: 0px 0 0px 0;
+      
+    }
     
   }
   .bio-top {
@@ -406,6 +418,11 @@ p {
   .tech-stack {
     width: 50%;
     padding: 16px 0px 16px 0px;
+    @media only all and (max-width: 950px) {
+      width: 100%;
+      padding: 0px 0 0px 0;
+      
+    }
 
     .icon-container {
       display: flex;
@@ -421,6 +438,12 @@ p {
         height: auto;
         padding: 14px;
         font-weight: 200;
+        @media only all and (max-width: 950px) {
+          width: 50px;
+          font-size: .8em;
+          
+          
+        }
       }
 
     }

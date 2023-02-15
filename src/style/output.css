@@ -293,6 +293,7 @@ p {
 @media only all and (max-width: 950px) {
   .project-button-container {
     padding: 8px 0 16px 0;
+    justify-content: left;
   }
 }
 
@@ -322,6 +323,12 @@ p {
   width: 70%;
   font-size: 3em;
 }
+@media only all and (max-width: 950px) {
+  .about-section h1 {
+    width: 100%;
+    padding: 0px 0 0px 0;
+  }
+}
 
 .about-card {
   display: flex;
@@ -338,12 +345,19 @@ p {
 @media only all and (max-width: 950px) {
   .about-card {
     width: 100%;
+    flex-direction: column-reverse;
     padding: 0 0 0px 0;
   }
 }
 .about-card .about-info {
   width: 50%;
   padding: 16px 0px 16px 0px;
+}
+@media only all and (max-width: 950px) {
+  .about-card .about-info {
+    width: 100%;
+    padding: 0px 0 0px 0;
+  }
 }
 .about-card .bio-top {
   text-align: left;
@@ -371,6 +385,12 @@ p {
   width: 50%;
   padding: 16px 0px 16px 0px;
 }
+@media only all and (max-width: 950px) {
+  .about-card .tech-stack {
+    width: 100%;
+    padding: 0px 0 0px 0;
+  }
+}
 .about-card .tech-stack .icon-container {
   display: flex;
   flex-wrap: wrap;
@@ -385,6 +405,12 @@ p {
   height: auto;
   padding: 14px;
   font-weight: 200;
+}
+@media only all and (max-width: 950px) {
+  .about-card .tech-stack .icon-container .icon-card {
+    width: 50px;
+    font-size: 0.8em;
+  }
 }
 
 .footer {
