@@ -163,14 +163,14 @@ p {
 .nav-project-header {
   display: flex;
   padding: 100px 0 0 0;
-  font-size: 1.75em;
+  font-size: 3em;
   margin: 0px auto;
   width: 70%;
 }
 @media only all and (max-width: 950px) {
   .nav-project-header {
     width: 100%;
-    padding: 0 0 0px 0;
+    padding: 0 0 0px 16px;
   }
 }
 .nav-project-header h1 {
@@ -180,6 +180,7 @@ p {
   .nav-project-header h1 {
     width: 100%;
     padding: 0 0 0px 0;
+    margin-top: 72px;
   }
 }
 
@@ -224,7 +225,7 @@ p {
 .project-image {
   max-width: 250px;
   height: fit-content;
-  width: auto;
+  max-width: auto;
   overflow: clip;
   border-radius: 0 10px 10px 0;
 }
@@ -326,7 +327,8 @@ p {
 @media only all and (max-width: 950px) {
   .about-section h1 {
     width: 100%;
-    padding: 0px 0 0px 0;
+    padding: 0px 0 0px 16px;
+    font-size: 3em;
   }
 }
 
