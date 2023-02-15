@@ -13,13 +13,18 @@ header {
 }
 @media only all and (max-width: 950px) {
   header {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 header .header-links {
   display: flex;
   gap: 24px;
   font-size: 0.75em;
+}
+@media only all and (max-width: 950px) {
+  header .header-links {
+    gap: 16px;
+  }
 }
 header .nav-header {
   display: flex;
@@ -162,6 +167,12 @@ p {
   margin: 0px auto;
   width: 70%;
 }
+@media only all and (max-width: 950px) {
+  .nav-project-header {
+    width: 100%;
+    padding: 0 0 0px 0;
+  }
+}
 .nav-project-header h1 {
   padding-right: 200px;
 }
@@ -180,6 +191,12 @@ p {
   border-radius: 10px 10px 10px 10px;
   font-style: normal;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+}
+@media only all and (max-width: 950px) {
+  .project-card {
+    width: 100%;
+    padding: 0 0 0px 0;
+  }
 }
 
 .card-image-container {

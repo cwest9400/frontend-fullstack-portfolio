@@ -4,6 +4,7 @@
 body {
   background-color: $background-color;
   color: $primary-color;
+  
 }
 
 header {
@@ -15,7 +16,7 @@ header {
   z-index: 2;
   @media only all and (max-width: 950px) {
  
- font-size: 1.5em;
+ font-size: 1.2em;
 
   }
 
@@ -23,6 +24,9 @@ header {
     display: flex;
     gap: 24px;
     font-size: 0.75em;
+    @media only all and (max-width: 950px) {
+      gap: 16px;
+    }
     
   }
   
@@ -162,6 +166,11 @@ p {
   font-size: 1.75em;
   margin: 0px auto;
   width: 70%;
+  @media only all and (max-width: 950px) {
+    width: 100%;
+    padding: 0 0 0px 0;
+    
+  }
   
   // background-color: aqua;
 
@@ -189,6 +198,12 @@ p {
   border-radius: 10px 10px 10px 10px;
   font-style: normal;
   box-shadow: $box-shadow;
+  @media only all and (max-width: 950px) {
+    width: 100%;
+    padding: 0 0 0px 0;
+    
+  }
+
 }
 .card-image-container {
   display: flex;
