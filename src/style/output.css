@@ -365,10 +365,24 @@ p {
   background-color: #f2f2f2;
   padding: 8px;
 }
+@media only all and (max-width: 950px) {
+  .about-card .bio-top {
+    width: auto;
+    padding: 24px;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: left;
+  }
+}
 .about-card .life-outside {
   padding-top: 10%;
   text-align: center;
   font-weight: 500;
+}
+@media only all and (max-width: 950px) {
+  .about-card .life-outside {
+    padding-top: 16px;
+  }
 }
 .about-card .bio {
   padding-top: 0;

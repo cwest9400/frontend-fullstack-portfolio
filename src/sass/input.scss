@@ -394,7 +394,15 @@ p {
     text-align: left;
     color: black;
     background-color: $background-color;
-    padding: 8px;;
+    padding: 8px;
+    @media only all and (max-width: 950px) {
+      width: auto;
+      padding:24px;
+      font-weight: 500;
+      font-size: 1em;
+      text-align: left;
+      
+    }
    
     
   }
@@ -402,6 +410,10 @@ p {
     padding-top: 10%;
     text-align: center;
     font-weight: 500;
+    @media only all and (max-width: 950px) {
+      padding-top: 16px;
+      
+    }
 
   }
   .bio {

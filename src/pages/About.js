@@ -8,7 +8,7 @@ function About(props) {
       <div className="about-card">
         <div className="about-info">
           <h3 className="bio-top">
-        As a full-stack software engineer with over 15 years of experience in manufacturing and operations, I bring a unique blend of technical expertise and practical design to every project.
+        As a full-stack software engineer with over 15 years of experience in manufacturing and operations, I bring a unique blend of technical expertise, thoughtfulness and practical design to every project.
         </h3>
         <h3 className="life-outside">life outside the office</h3>
         <p className="bio">I'm usually hanging out with my family. My wife and I love adventure and showing the world to our new daughter.</p>
