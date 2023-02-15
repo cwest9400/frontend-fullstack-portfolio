@@ -176,6 +176,12 @@ p {
 .nav-project-header h1 {
   padding-right: 200px;
 }
+@media only all and (max-width: 950px) {
+  .nav-project-header h1 {
+    width: 100%;
+    padding: 0 0 0px 0;
+  }
+}
 
 .project-links {
   display: flex;
@@ -196,6 +202,8 @@ p {
   .project-card {
     width: 100%;
     padding: 0 0 0px 0;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
@@ -206,6 +214,12 @@ p {
   width: 100%;
   object-fit: contain;
   overflow: clip;
+}
+@media only all and (max-width: 950px) {
+  .card-image-container {
+    flex-direction: column;
+    padding: 0 0 0px 0;
+  }
 }
 
 .project-image {
@@ -227,13 +241,34 @@ p {
 }
 
 .project-card-title {
-  text-align: center;
+  text-align: left;
+  padding: 16px 0 0px 0;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+@media only all and (max-width: 950px) {
+  .project-card-title {
+    width: 100%;
+    padding: 16px 0 0px 0;
+  }
+}
+
+.project-type-paragraph {
+  font-weight: 300;
+}
+@media only all and (max-width: 950px) {
+  .project-type-paragraph {
+    font-weight: 200;
+    font-size: 0.8em;
+  }
 }
 
 .project-desc-paragraph {
   font-weight: 300;
 }
-
+.project-desc-paragraph {
+  font-weight: 300;
+}
 .project-technology-container {
   flex-grow: 1;
   font-weight: 300;

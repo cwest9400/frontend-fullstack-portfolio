@@ -173,9 +173,14 @@ p {
   }
   
   // background-color: aqua;
-
+//project. header
   h1 {
     padding-right: 200px;
+    @media only all and (max-width: 950px) {
+    width: 100%;
+    padding: 0 0 0px 0;
+    
+  }
   }
 }
 .project-links {
@@ -201,6 +206,8 @@ p {
   @media only all and (max-width: 950px) {
     width: 100%;
     padding: 0 0 0px 0;
+    flex-direction: column;
+    flex-wrap: wrap;
     
   }
 
@@ -212,6 +219,11 @@ p {
   width: 100%;
   object-fit: contain;
   overflow: clip;
+  @media only all and (max-width: 950px) {
+    flex-direction: column;
+    padding: 0 0 0px 0;
+    
+  }
   
   // background-color: hotpink;
 }
@@ -236,14 +248,44 @@ p {
   
 }
 .project-card-title {
-  text-align: center;
+  text-align: left;
+  padding: 16px 0 0px 0;
+  font-size: 1.4em;
+  font-weight: 700;
+  @media only all and (max-width: 950px) {
+    width: 100%;
+    padding: 16px 0 0px 0;
+    
+  }
   
   
   
 
 }
+.project-type-paragraph {
+  font-weight: 300;
+  @media only all and (max-width: 950px) {
+    font-weight: 200;
+    font-size: .8em;
+  }
+  
+}
 .project-desc-paragraph {
   font-weight: 300;
+  @media only all and (max-width: 950px) {
+    
+    
+    
+  }
+  
+}
+.project-desc-paragraph {
+  font-weight: 300;
+  @media only all and (max-width: 950px) {
+    
+    
+    
+  }
   
 }
 .project-technology-container {
