@@ -203,7 +203,7 @@ p {
     width: 100%;
     padding: 0 0 0px 0;
     flex-direction: column;
-    flex-wrap: wrap;
+    height: 600px;
   }
 }
 
@@ -217,7 +217,6 @@ p {
 }
 @media only all and (max-width: 950px) {
   .card-image-container {
-    flex-direction: column;
     padding: 0 0 0px 0;
   }
 }
@@ -238,6 +237,12 @@ p {
   gap: 16px;
   word-break: normal;
   font-size: 0.9em;
+}
+@media only all and (max-width: 950px) {
+  .project-description {
+    width: auto;
+    padding: 0 24px 0 24px;
+  }
 }
 
 .project-card-title {
@@ -284,6 +289,11 @@ p {
   justify-content: center;
   padding: 0 0 24px 0;
   gap: 36px;
+}
+@media only all and (max-width: 950px) {
+  .project-button-container {
+    padding: 8px 0 16px 0;
+  }
 }
 
 .button-project-links {
