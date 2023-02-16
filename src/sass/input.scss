@@ -1,9 +1,9 @@
 //Sass variable
 @use "_variables" as *;
 
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 body {
   background-color: $background-color;
   color: $primary-color;
@@ -220,6 +220,7 @@ p {
   box-sizing: border-box;
   @media only all and (max-width: 950px) {
     border-radius: 0 0px 10px 10px;
+    padding: 0 0 0 0px;
   }
 
   // background-color: hotpink;
@@ -229,7 +230,7 @@ p {
     width: auto;
     overflow: clip;
     border-radius: 0 10px 10px 0;
-    border-color: cornflowerblue;
+    
     @media only all and (max-width: 950px) {
       padding: 0 0 0px 0;
     }
