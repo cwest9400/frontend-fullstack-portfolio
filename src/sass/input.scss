@@ -1,10 +1,12 @@
 //Sass variable
 @use "_variables" as *;
 
+* {
+  outline: 1px solid red;
+}
 body {
   background-color: $background-color;
   color: $primary-color;
-  
 }
 
 header {
@@ -15,9 +17,7 @@ header {
   font-size: 2rem;
   z-index: 2;
   @media only all and (max-width: 950px) {
- 
- font-size: 1.2em;
-
+    font-size: 1.2em;
   }
 
   .header-links {
@@ -27,9 +27,7 @@ header {
     @media only all and (max-width: 950px) {
       gap: 16px;
     }
-    
   }
-  
 
   .nav-header {
     display: flex;
@@ -40,17 +38,13 @@ header {
 
     @media only all and (max-width: 950px) {
       padding: 0 24px 0 24px;
-     
+    }
   }
- 
-}
 }
 
 a {
   text-decoration: none;
   color: $background-color;
-  
- 
 }
 
 .home-section {
@@ -69,12 +63,13 @@ a {
   border-radius: 0 0 10px 10px;
   font-style: normal;
   box-shadow: $box-shadow;
+  box-sizing: content-box;
+
   @media only all and (max-width: 950px) {
-    width: 100%;
+    width: auto;
     height: 250px;
     justify-content: center;
-    padding: 0 0 0px 0;
-    
+    padding: 0 16px 0px 0;
   }
 }
 
@@ -85,13 +80,13 @@ h1 {
   padding-top: 24px;
   text-align: right;
   @media only all and (max-width: 950px) {
-    font-size: 1.2em;
-}
+    font-size: 1.4em;
+  }
   @media only all and (max-width: 635px) {
-    font-size: .8em;
+    font-size: 1em;
     padding: 16px 24px 24px 24px;
     text-align: right;
-}
+  }
 }
 
 p {
@@ -103,12 +98,12 @@ p {
   color: $tertiary-color;
   word-wrap: break-word;
   @media only all and (max-width: 950px) {
-    font-size: .9em;
-}
-  @media only all and (max-width: 635px) {
-    font-size: .7em;
+    font-size: 0.9em;
+  }
+  @media only all and (max-width: 950px) {
+    font-size: 0.9em;
     padding: 0 24px 56px 0;
-}
+  }
 }
 
 .img-headshot {
@@ -117,27 +112,31 @@ p {
   width: auto;
   object-fit: contain;
   padding: 0 0 0 20px;
-  @media only all and (max-width: 635px) {
+  box-sizing: border-box;
+
+  @media only all and (max-width: 950px) {
     flex-direction: column-reverse;
     align-items: center;
-}
+  }
   .face {
     width: auto;
     height: fit-content;
     overflow: auto;
-    border-radius: 0 10px 10px 0;
-    @media only all and (max-width: 635px) {
+
+    // box-sizing: border-box;
+
+    @media only all and (max-width: 950px) {
       max-height: 00px;
       max-width: 00px;
+    }
   }
-}
 
   .button-cta-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    
+
     .button-cta {
       width: auto;
       padding: 8px;
@@ -149,12 +148,10 @@ p {
       color: $primary-color;
       @media only all and (max-width: 950px) {
         font-size: 1em;
-       
-    }
+      }
     }
     a.button-cta:hover {
       background-color: rgb(155, 220, 237);
-    
     }
   }
 }
@@ -167,21 +164,19 @@ p {
   margin: 0px auto;
   width: 70%;
   @media only all and (max-width: 950px) {
-    width: 100%;
+    width: auto;
     padding: 0 0 0px 16px;
-    
   }
-  
+
   // background-color: aqua;
-//project. header
+  //project. header
   h1 {
     padding-right: 200px;
     @media only all and (max-width: 950px) {
-    width: 100%;
-    padding: 0 0 0px 0;
-    margin-top: 72px;
-    
-  }
+      width: 100%;
+      padding: 0 0 0px 0;
+      margin-top: 72px;
+    }
   }
 }
 .project-links {
@@ -198,7 +193,7 @@ p {
   display: flex;
   background: $secondary-color;
   margin: 72px auto;
-  
+
   height: 400px;
   width: 70%;
   border-radius: 10px 10px 10px 10px;
@@ -209,10 +204,7 @@ p {
     padding: 0 0 0px 0;
     flex-direction: column;
     height: 600px;
-    
-    
   }
-
 }
 .card-image-container {
   display: flex;
@@ -220,38 +212,43 @@ p {
   height: auto;
   width: 100%;
   object-fit: contain;
-  overflow: clip;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 0 10px 10px 0;
+  object-fit: contain;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
   @media only all and (max-width: 950px) {
-    
-    padding: 0 0 0px 0;
-    
+    border-radius: 0 0px 10px 10px;
   }
-  
+
   // background-color: hotpink;
-}
-.project-image {
-  max-width: 250px;
-  height: fit-content;
-  max-width: auto;
+  .project-image {
+    box-sizing: border-box;
+    height: 100%;
+    width: auto;
     overflow: clip;
     border-radius: 0 10px 10px 0;
-    
+    border-color: cornflowerblue;
+    @media only all and (max-width: 950px) {
+      padding: 0 0 0px 0;
+    }
+  }
 }
 
 .project-description {
   display: flex;
   flex-direction: column;
   width: 70%;
-  padding:0 8px 0 24px;
+  padding: 0 8px 0 24px;
   // background-color: blueviolet;
   gap: 16px;
   word-break: normal;
-  font-size: .9em;
+  font-size: 0.9em;
   @media only all and (max-width: 950px) {
     width: auto;
-    padding: 0 24px 0 24px;    
+    padding: 0 24px 0 24px;
   }
-  
 }
 .project-card-title {
   text-align: left;
@@ -261,38 +258,25 @@ p {
   @media only all and (max-width: 950px) {
     width: 100%;
     padding: 16px 0 0px 0;
-    
   }
-  
-  
-  
-
 }
+
 .project-type-paragraph {
   font-weight: 300;
   @media only all and (max-width: 950px) {
     font-weight: 200;
-    font-size: .8em;
+    font-size: 0.8em;
   }
-  
 }
 .project-desc-paragraph {
   font-weight: 300;
   @media only all and (max-width: 950px) {
-    
-    
-    
   }
-  
 }
 .project-desc-paragraph {
   font-weight: 300;
   @media only all and (max-width: 950px) {
-    
-    
-    
   }
-  
 }
 .project-technology-container {
   flex-grow: 1;
@@ -302,9 +286,7 @@ p {
 .project-technology-title {
   font-weight: 700;
   padding-top: 8px;
-  
 }
-
 
 .project-button-container {
   display: flex;
@@ -314,11 +296,7 @@ p {
   @media only all and (max-width: 950px) {
     padding: 8px 0 16px 0;
     justify-content: left;
-    
   }
- 
-
-
 }
 
 .button-project-links {
@@ -330,7 +308,6 @@ p {
   border-radius: 4px;
   border: solid;
   color: $primary-color;
-  
 }
 
 ///////////////
@@ -353,13 +330,12 @@ p {
     padding-top: 100px;
     text-align: left;
     margin: 0px auto;
-  width: 70%;
+    width: 70%;
     font-size: 3em;
     @media only all and (max-width: 950px) {
-      width: 100%;
+      width: auto;
       padding: 0px 0 0px 16px;
       font-size: 3em;
-      
     }
   }
 }
@@ -378,9 +354,7 @@ p {
     width: 100%;
     flex-direction: column-reverse;
     padding: 0 0 0px 0;
-    
   }
-
 
   .about-info {
     width: 50%;
@@ -388,9 +362,7 @@ p {
     @media only all and (max-width: 950px) {
       width: 100%;
       padding: 0px 0 0px 0;
-      
     }
-    
   }
   .bio-top {
     text-align: left;
@@ -399,14 +371,11 @@ p {
     padding: 8px;
     @media only all and (max-width: 950px) {
       width: auto;
-      padding:24px;
+      padding: 24px;
       font-weight: 500;
       font-size: 1em;
       text-align: left;
-      
     }
-   
-    
   }
   .life-outside {
     padding-top: 10%;
@@ -414,9 +383,7 @@ p {
     font-weight: 500;
     @media only all and (max-width: 950px) {
       padding-top: 16px;
-      
     }
-
   }
   .bio {
     padding-top: 0;
@@ -428,7 +395,6 @@ p {
     @media only all and (max-width: 950px) {
       height: auto;
       padding: 8px 16px 8px 16px;
-      
     }
   }
   .contact {
@@ -447,7 +413,6 @@ p {
     @media only all and (max-width: 950px) {
       width: 100%;
       padding: 0px 0 0px 0;
-      
     }
 
     .icon-container {
@@ -466,12 +431,9 @@ p {
         font-weight: 200;
         @media only all and (max-width: 950px) {
           width: 50px;
-          font-size: .8em;
-          
-          
+          font-size: 0.8em;
         }
       }
-
     }
   }
 }
@@ -479,18 +441,14 @@ p {
   background-color: black;
   color: white;
   width: 100%;
-  height:auto;
+  height: auto;
   padding: 16px 0;
   text-align: center;
 }
 
 a.button-project-links:hover {
   background-color: rgb(155, 220, 237);
-
 }
 
 @media only all and (min-width: 1px) {
- 
-
 }
-

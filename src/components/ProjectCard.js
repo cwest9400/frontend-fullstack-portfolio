@@ -24,7 +24,7 @@ export default function ProjectCard(props) {
             </div>
 
             <div className="card-image-container">
-                <img className="face" src={PROJECT_IMG[props.id]} alt="project thumbnail" />
+                <img className="project-image" src={PROJECT_IMG[props.id]} alt="project thumbnail" />
             </div>
         </div>
 

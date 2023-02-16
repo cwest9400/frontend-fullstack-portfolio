@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 body {
   background-color: #f2f2f2;
   color: #000000;
@@ -59,13 +63,14 @@ a {
   border-radius: 0 0 10px 10px;
   font-style: normal;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.25);
+  box-sizing: content-box;
 }
 @media only all and (max-width: 950px) {
   .intro-card {
-    width: 100%;
+    width: auto;
     height: 250px;
     justify-content: center;
-    padding: 0 0 0px 0;
+    padding: 0 16px 0px 0;
   }
 }
 
@@ -78,12 +83,12 @@ h1 {
 }
 @media only all and (max-width: 950px) {
   h1 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 @media only all and (max-width: 635px) {
   h1 {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 16px 24px 24px 24px;
     text-align: right;
   }
@@ -103,9 +108,9 @@ p {
     font-size: 0.9em;
   }
 }
-@media only all and (max-width: 635px) {
+@media only all and (max-width: 950px) {
   p {
-    font-size: 0.7em;
+    font-size: 0.9em;
     padding: 0 24px 56px 0;
   }
 }
@@ -116,8 +121,9 @@ p {
   width: auto;
   object-fit: contain;
   padding: 0 0 0 20px;
+  box-sizing: border-box;
 }
-@media only all and (max-width: 635px) {
+@media only all and (max-width: 950px) {
   .img-headshot {
     flex-direction: column-reverse;
     align-items: center;
@@ -127,9 +133,8 @@ p {
   width: auto;
   height: fit-content;
   overflow: auto;
-  border-radius: 0 10px 10px 0;
 }
-@media only all and (max-width: 635px) {
+@media only all and (max-width: 950px) {
   .img-headshot .face {
     max-height: 0px;
     max-width: 0px;
@@ -169,7 +174,7 @@ p {
 }
 @media only all and (max-width: 950px) {
   .nav-project-header {
-    width: 100%;
+    width: auto;
     padding: 0 0 0px 16px;
   }
 }
@@ -214,20 +219,30 @@ p {
   height: auto;
   width: 100%;
   object-fit: contain;
-  overflow: clip;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 0 10px 10px 0;
+  object-fit: contain;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
 }
 @media only all and (max-width: 950px) {
   .card-image-container {
-    padding: 0 0 0px 0;
+    border-radius: 0 0px 10px 10px;
   }
 }
-
-.project-image {
-  max-width: 250px;
-  height: fit-content;
-  max-width: auto;
+.card-image-container .project-image {
+  box-sizing: border-box;
+  height: 100%;
+  width: auto;
   overflow: clip;
   border-radius: 0 10px 10px 0;
+  border-color: cornflowerblue;
+}
+@media only all and (max-width: 950px) {
+  .card-image-container .project-image {
+    padding: 0 0 0px 0;
+  }
 }
 
 .project-description {
@@ -326,7 +341,7 @@ p {
 }
 @media only all and (max-width: 950px) {
   .about-section h1 {
-    width: 100%;
+    width: auto;
     padding: 0px 0 0px 16px;
     font-size: 3em;
   }
