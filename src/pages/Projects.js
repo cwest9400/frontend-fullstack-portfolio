@@ -12,7 +12,7 @@ function Projects(props) {
             })
             .catch(console.error)
     }, [])
-console.log(projects)
+
     const loaded = () => {
         return (
             <div>

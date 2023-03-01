@@ -3,6 +3,7 @@ import ProjectHeader from "../components/ProjectHeader"
 import About from "./About"
 
 function Home() {
+    console.log("%c Hi! Let's be friends :)", 'background: #000; color: #bada55')
     return (
         <section className="home-section" id="home">
             <div className="intro-card">

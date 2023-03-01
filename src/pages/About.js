@@ -2,7 +2,7 @@ import DEV_ICONS from "../images/dev_icons/devIcons"
 
 
 function About(props) {
-  console.log(DEV_ICONS)
+  
   return (
     <div className="about-section">
       <h1>about.</h1>
@@ -14,12 +14,12 @@ function About(props) {
         <h3 className="life-outside">life outside the office</h3>
         <p className="bio">I'm usually hanging out with my family. My wife and I love adventure and showing the world to our new daughter.</p>
         
-<p className="bio">
+<div className="bio">
 I'm also a part-time wizard and enjoy wizardly activities such as playing Magic: The Gathering, painting fantasy illustrations and woodworking. One day, I will finally finish the illustrated card game that I started a few years ago.
 <div className="contact">
 chrstphrwest@gmail.com
 </div>
-</p>
+</div>
 
         
         </div>
