@@ -1,0 +1,40 @@
+[
+    {
+      "id": "3",
+      "name": "Final Fantasy craft shop",
+      "live": "https://boisterous-griffin-c4d9b1.netlify.app",
+      "git": "https://github.com/cwest9400/unitbuilder",
+      "image": "",
+      "tag": "dev",
+      "type": "front end",
+      "desc": "An item crafter app, that allows the user to buy materials, keep inventory and create items.",
+      "tech": [
+        "JavaScript, ",
+        "CSS, ",
+        "HTML "
+      ]
+    },
+    {
+      "id": "2",
+      "name": "DnD Class Guide",
+      "live": "https://warm-selkie-a2ebf0.netlify.app/",
+      "git": "https://github.com/cwest9400/dnd-classes",
+      "image": "https://user-images.githubusercontent.com/116116801/206931992-f94b7019-3283-4c0f-a040-cbfda97cab48.png",
+      "tag": "dev",
+      "type": "frontend",
+      "desc": "A front end web application that serves as a dungeons and dragons reference guide for new players.",
+      "tech": ["React, ", "JavaScript, ", "CSS, ", "Node.js"]
+    },
+    {
+      "id": "1",
+      "name": "Estimate Builder",
+      "live": "https://extraordinary-cocada-a1315a.netlify.app/",
+      "git": "https://github.com/cwest9400/estimatetool",
+      "image": "",
+      "tag": "dev",
+      "type": "frontend",
+      "desc": "A front end React application that is a tool for field technicians to create quick cost estimates on the fly. This is a MVP with lots of potential features.",
+      "tech": ["React, ", "JavaScript, ", "CSS, "]
+    }
+  
+  ]

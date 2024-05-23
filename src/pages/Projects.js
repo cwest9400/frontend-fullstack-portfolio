@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react"
 import ProjectCard from '../components/ProjectCard'
+import projectsData from '../projects.json'
 
 function Projects(props) {
-    const [projects, setProjects] = useState([])
+    const [projects, setProjects] = useState(projectsData)
 
-    useEffect(() => {
-        fetch("https://oldnebu.herokuapp.com/projects")
-            .then((res) => res.json())
-            .then((json) => {
-                setProjects(json)
-            })
-            .catch(console.error)
-    }, [])
+    // useEffect(() => {
+    //     fetch("https://oldnebu.herokuapp.com/projects")
+    //         .then((res) => res.json())
+    //         .then((json) => {
+    //             setProjects(json)
+    //         })
+    //         .catch(console.error)
+    // }, [])
 
     const loaded = () => {
         return (
@@ -36,7 +37,7 @@ function Projects(props) {
 
     }
     return (
-        projects ? loaded() : <h1>Loading...</h1>)
+        projects.length > 0 ? loaded() : <h1>Loading...</h1>)
 }
 
 export default Projects
