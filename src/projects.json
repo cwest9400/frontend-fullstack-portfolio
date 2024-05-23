@@ -6,7 +6,7 @@
       "git": "https://github.com/cwest9400/unitbuilder",
       "image": "",
       "tag": "dev",
-      "type": "front end",
+      "type": "frontend",
       "desc": "An item crafter app, that allows the user to buy materials, keep inventory and create items.",
       "tech": [
         "JavaScript, ",
