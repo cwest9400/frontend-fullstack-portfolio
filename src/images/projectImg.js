@@ -1,8 +1,8 @@
 
 
 const PROJECT_IMG = {
-    4: "https://i.imgur.com/tD4kObG.png",
-    3: "https://i.imgur.com/Z84fXa4.png",
+    1: "https://i.imgur.com/4pBzEFJ.png",
+    3: "https://i.imgur.com/YLkZoWo.png",
     2: "https://i.imgur.com/BcC9Y8B.png",
 
 }
