@@ -231,7 +231,10 @@ p {
 .card-image-container .project-image {
   box-sizing: border-box;
   height: 100%;
-  width: auto;
+  border-color: red;
+  border-width: 4px;
+  width: 100%;
+  object-fit: cover;
   overflow: clip;
   border-radius: 0 10px 10px 0;
 }
